@@ -1,0 +1,176 @@
+/* リセット: すべての要素の余白を統一 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ボディの基本スタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px 0;
+}
+
+/* コンテナの幅とパディング */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 20px;  /* 空白を広めに設定 */
+}
+
+/* ヘッダー */
+header {
+    background-color: #007BFF; /* ベースカラー: 青 */
+    color: #fff;
+    padding: 20px 0;  /* ヘッダーの上下に余白 */
+    margin-bottom: 40px;  /* ヘッダーの下に余白 */
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 1.8em;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 30px;  /* リンク間に余裕を持たせる */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    color: #FFA500; /* アクセントカラー: オレンジ */
+}
+
+/* フッター */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;  /* フッターに広めの空白 */
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* 記事全体に枠を設けて視覚的に整理 */
+.post {
+    background-color: #ffffff; /* 背景を白に */
+    padding: 30px; /* 内側の余白を増やす */
+    margin-bottom: 50px; /* 下に余白を設ける */
+    border-radius: 12px; /* 角を丸める */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ソフトな影を追加 */
+    transition: all 0.3s ease; /* マウスホバーでアニメーション */
+}
+
+/* マウスを乗せたときに少し浮かび上がる効果 */
+.post:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* ホバー時の影を強調 */
+    transform: translateY(-5px); /* 軽く浮き上がるエフェクト */
+}
+
+/* タイトルデザインに青を使用 */
+.post-title {
+    font-size: 2.5em; /* タイトルサイズをやや大きめに */
+    margin-bottom: 20px; /* タイトル下に余白 */
+    color: #007BFF; /* 青でタイトルを強調 */
+    font-weight: 700; /* 太さを強調 */
+    text-transform: capitalize; /* 先頭文字を大文字に */
+    line-height: 1.3; /* 行間を少し狭める */
+}
+
+/* メタ情報（投稿日、カテゴリー）をシンプルに */
+.post-meta {
+    font-size: 0.9em; /* メタ情報は小さめのフォント */
+    color: #888; /* グレーで控えめなスタイル */
+    margin-bottom: 25px; /* メタ情報と本文の間に余白 */
+}
+
+/* 記事のコンテンツデザインをシンプルに調整 */
+.post-content {
+    font-size: 1.1em; /* 少し大きめのフォントサイズで読みやすく */
+    line-height: 1.8; /* 行間を広く取り、読みやすさを重視 */
+    color: #555; /* コンテンツの色をダークグレーにして見やすく */
+}
+
+/* タグデザインにオレンジを使用 */
+.tag {
+    display: inline-block;
+    background-color: #FFA500; /* オレンジの背景色 */
+    color: #fff;
+    padding: 5px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px; /* 丸みを帯びたデザイン */
+    font-size: 0.9em; /* 小さめのフォント */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+    background-color: #FF7F00; /* ホバー時の濃いオレンジ */
+}
+
+/* 記事ナビゲーションリンクに青を使用 */
+.post-nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #007BFF; /* 青でボタンをデザイン */
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.post-nav-link:hover {
+    background-color: #0056b3; /* 濃い青 */
+    transform: translateY(-2px); /* 軽く浮き上がるエフェクト */
+}
+
+/* 前後の記事へのリンクをカスタマイズ */
+.post-footer .post-navigation {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between; /* 前後のリンクを左右に配置 */
+}
+
+.post-footer .post-nav-link {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* ボタンのスタイル */
+button {
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

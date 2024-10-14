@@ -1,0 +1,26 @@
+---
+layout: default
+title: ホーム
+---
+
+<section class="home-intro">
+    <h2>ようこそ、{{ site.title }}へ</h2>
+    <p>{{ site.description }}</p>
+</section>
+
+<section class="recent-posts">
+    <h3>最近の投稿</h3>
+    <ul>
+        {% for post in site.posts limit:5 %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span>{{ post.date | date: "%Y年 %B %d日" }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="about">
+    <h3>About Us</h3>
+    <p>{{ site.data.about.content }}</p>
+</section>
