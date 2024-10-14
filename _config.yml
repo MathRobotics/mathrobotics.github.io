@@ -1,3 +1,7 @@
-title: 技術ブログ
+title: Math Robotics
 description: "技術に関する記事を書いていきます"
 theme: jekyll-theme-minimal
+
+domain: mathrobotics.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://mathrobotics.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /MathRoboitcs/      # place folder name if the site is served in a subfolder
